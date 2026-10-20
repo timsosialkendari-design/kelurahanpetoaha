@@ -85,25 +85,25 @@
       "bab": "BAB 08",
       "judul": "Kegiatan dan Sarana Keamanan",
       "keterangan": "Tidak terdapat kantor/pos polisi di Kelurahan Petoaha.",
-      "file_gambar": "Bab8.jpg"
+      "file_gambar": "Bab 8.png"
     },
     {
       "bab": "BAB 09",
       "judul": "Sarana Ekonomi dan Industri",
       "keterangan": "Terdapat 16 kios kelontong, 11 warung/kedai makanan, dan 1 penginapan.",
-      "file_gambar": "Bab9.jpg"
+      "file_gambar": "Bab 9.png"
     },
     {
-      "bab": "BAB 13",
-      "judul": "Infrastruktur Fasilitas Pendidikan",
-      "keterangan": "Ketersediaan 1 TK, 1 SD/MI, 1 SMA, 1 SMK untuk pemerataan akses sekolah.",
-      "file_gambar": "Infrasturktur Pendidikan.png"
+      "bab": "BAB 12",
+      "judul": "Gangguan Keamanan",
+      "keterangan": "Terdapat 36,4 persen dari 11 RT yang mengalami kejadian pencurian.",
+      "file_gambar": "Bab 12.png"
     },
     {
       "bab": "BAB 14",
       "judul": "Infrastruktur Ekonomi & Perdagangan",
       "keterangan": "Pusat niaga: 16 kios kelontong, 10 warung, 1 minimarket, dan 1 hotel bahari.",
-      "file_gambar": "Infrastruktur Ekonomi.png"
+      "file_gambar": "Bab 14.png"
     }
   ]
 }
