@@ -1,0 +1,109 @@
+{
+  "profil": {
+    "nama_kelurahan": "Kelurahan Petoaha",
+    "kecamatan": "Kecamatan Nambo",
+    "kota": "Kota Kendari",
+    "provinsi": "Sulawesi Tenggara",
+    "dasar_hukum": "Perda Kota Kendari Nomor 1 Tahun 2021",
+    "luas_wilayah_km2": 7.40,
+    "jumlah_rw": 5,
+    "jumlah_rt": 11,
+    "batas_wilayah": {
+      "utara": "Selat Bungkutoko",
+      "selatan": "Kabupaten Konawe Selatan",
+      "barat": "Kelurahan Tobimeita dan Anggalomelai",
+      "timur": "Kelurahan Nambo"
+    },
+    "lurah": {
+      "nama": "Yamin, S.IP",
+      "nip": "198001032008011008",
+      "periode": "2025 - Sekarang",
+      "foto": "LurahYamin.jpeg",
+      "sambutan": "Selamat datang di Portal Resmi Desa Cinta Statistik (Desa Cantik) Kelurahan Petoaha. Portal ini dihadirkan sebagai komitmen transparansi Satu Data Indonesia untuk memetakan potensi masyarakat pesisir, pariwisata bahari, pendidikan, serta ketenteraman wilayah kami berbasis data yang valid dan mutakhir."
+    },
+    "foto_kantor": "Gambar Kantor lurah.jpg",
+    "visi": "Membangun Kelurahan Petoaha yang profesional, ramah, aman, nyaman dan sejahtera.",
+    "sejarah_singkat": "Kelurahan Petoaha bermula dari perkampungan pesisir tradisional di bagian selatan Kota Kendari yang berkembang pesat berkat potensi baharinya, terutama Pantai Nambo. Saat pemekaran wilayah untuk mendekatkan pelayanan publik kepada masyarakat, Nambo didapuk menjadi ibu kota Kecamatan Nambo yang resmi berdiri berdasarkan Perda Kota Kendari No. 1 Tahun 2021."
+  },
+  "statistik_2026": {
+    "total_penduduk": 2069,
+    "penduduk_laki": 1020,
+    "penduduk_perempuan": 1049,
+    "rasio_jenis_kelamin": 97,
+    "jumlah_keluarga_2026": 512,
+    "riwayat_keluarga": [
+      { "tahun": "2024", "jumlah": 434 },
+      { "tahun": "2025", "jumlah": 478 },
+      { "tahun": "2026", "jumlah": 512 }
+    ],
+    "topografi": {
+      "dataran_persen": 100,
+      "pesisir_rt_persen": 75,
+      "bukan_pesisir_persen": 25
+    },
+    "pendidikan_ringkasan": {
+      "tk": 1,
+      "sd": 1,
+      "smp": 0,
+      "sma": 0,
+      "smk": 0,
+      "detail": [
+        { "nama": "TK Raodah Al Fatah", "NPSN": "69861793" },
+        { "nama": "SDN 102 Kendari", "alamat": "40402578" }
+      ]
+    },
+    "ekonomi_ringkasan": {
+      "sarana_perdagangan": 27,
+      "minimarket": 0,
+      "kios_kelontong": 16,
+      "warung_makan": 11,
+      "hotel": 0,
+      "penginapan": 1,
+      "bank": 0,
+      "koperasi": 0,
+      "total_industri_mikro": 2,
+      "industri_detail": [
+        { "jenis": "Industri Makanan", "jumlah": 2 }
+      ]
+    },
+    "bencana_dan_keamanan": {
+      "rt_rambu_evakuasi_persen": 0,
+      "rW_pernah_banjir_persen": 20,
+      "rt_perkelahian_pelajar_persen": 0,
+      "rt_tindak_pencurian_persen": 36
+    }
+  },
+  "struktur_organisasi": [
+    { "jabatan": "Lurah", "nama": "Yamin, S.IP", "nip": "198001032008011008" },
+    { "jabatan": "Sekretaris Kelurahan", "nama": "-", "nip": "-" },
+    { "jabatan": "Kasi Pemerintahan & Yanlik", "nama": "-", "nip": "-" },
+    { "jabatan": "Kasi Pembangunan & P3M", "nama": "Miyddehan, S.Sos", "nip": "-" },
+    { "jabatan": "Kasi Trantibum", "nama": "Yoni, S.Si", "nip": "-" }
+  ],
+  "infografis_galeri": [
+    {
+      "bab": "BAB 08",
+      "judul": "Kegiatan dan Sarana Keamanan",
+      "keterangan": "Tidak terdapat kantor/pos polisi di Kelurahan Petoaha.",
+      "file_gambar": "Bab8.jpg"
+    },
+    {
+      "bab": "BAB 09",
+      "judul": "Sarana Ekonomi dan Industri",
+      "keterangan": "Terdapat 16 kios kelontong, 11 warung/kedai makanan, dan 1 penginapan.",
+      "file_gambar": "Bab9.jpg"
+    },
+    {
+      "bab": "BAB 13",
+      "judul": "Infrastruktur Fasilitas Pendidikan",
+      "keterangan": "Ketersediaan 1 TK, 1 SD/MI, 1 SMA, 1 SMK untuk pemerataan akses sekolah.",
+      "file_gambar": "Infrasturktur Pendidikan.png"
+    },
+    {
+      "bab": "BAB 14",
+      "judul": "Infrastruktur Ekonomi & Perdagangan",
+      "keterangan": "Pusat niaga: 16 kios kelontong, 10 warung, 1 minimarket, dan 1 hotel bahari.",
+      "file_gambar": "Infrastruktur Ekonomi.png"
+    }
+  ]
+}

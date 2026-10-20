@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desa Cantik Kelurahan Nambo | Satu Data Statistik</title>
+  
+  <!-- CDN Framework UI & Ikon -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    .bg-grid-pattern {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Title -->
+        <div class="flex items-center gap-3">
+          <img src="logo-kendari.png" alt="Logo Kota Kendari" class="h-12 w-auto object-contain drop-shadow">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-lg sm:text-xl font-black text-emerald-900 tracking-tight leading-none uppercase">Kelurahan Petoaha</span>
+              <span class="px-2 py-0.5 text-[10px] font-bold bg-emerald-100 text-emerald-800 rounded-full">DESA CANTIK</span>
+            </div>
+            <p class="text-xs text-slate-500 font-medium">Kecamatan Nambo, Kota Kendari</p>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+          <a href="#beranda" class="hover:text-emerald-600 transition">Beranda</a>
+          <a href="#sambutan" class="hover:text-emerald-600 transition">Sambutan</a>
+          <a href="#profil" class="hover:text-emerald-600 transition">Profil</a>
+          <a href="#statistik" class="hover:text-emerald-600 transition">Statistik</a>
+          <a href="#infografis" class="hover:text-emerald-600 transition">Galeri Infografis</a>
+          <a href="#struktur" class="hover:text-emerald-600 transition">Pemerintahan</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <header id="beranda" class="relative bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-grid-pattern pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+          <i class="fa-solid fa-award text-amber-400"></i> Program Pembinaan Desa Cinta Statistik (BPS Kota Kendari)
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+          Portal Satu Data Digital <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-cyan-300">Kelurahan Petoaha</span>
+        </h1>
+        <p class="text-base sm:text-lg text-emerald-100/90 leading-relaxed max-w-2xl">
+          Menyajikan profil spasial kependudukan, sarana ekonomi mikro, dan fasilitas umum dalam satu platform terpadu.
+        </p>
+        <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4">
+          <a href="#statistik" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-xl shadow-lg transition flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-chart-pie"></i> Buka Data Statistik
+          </a>
+          <a href="#infografis" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-6 py-3 rounded-xl backdrop-blur-sm transition flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-images"></i> Lihat Galeri Infografis
+          </a>
+        </div>
+      </div>
+
+      <!-- Foto Kantor Kelurahan Nambo -->
+      <div class="lg:col-span-5">
+        <div class="relative bg-white/10 p-2.5 rounded-2xl border border-white/20 backdrop-blur shadow-2xl">
+          <div class="relative rounded-xl overflow-hidden aspect-video sm:aspect-[4/3]">
+            <img id="hero-foto-kantor" src="Kantor Lurah Petoaha.jpeg" alt="Kantor Kelurahan Nambo" class="w-full h-full object-cover">
+          </div>
+          <div class="p-3 text-center">
+            <span class="text-xs font-semibold text-emerald-200 tracking-wider uppercase block">Kantor Pelayanan Terpadu</span>
+            <p class="text-sm font-bold text-white mt-0.5">Kelurahan Petoaha, Kota Kendari</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HIGHLIGHT STATISTIK CEPAT ================= -->
+  <section class="max-w-7xl mx-auto px-4 -mt-8 sm:px-6 lg:px-8 relative z-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white p-5 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl shrink-0">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black text-slate-900 block" id="kpi-penduduk">1.561</span>
+          <span class="text-xs font-semibold text-slate-500 uppercase">Total Penduduk</span>
+        </div>
+      </div>
+      <div class="bg-white p-5 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl shrink-0">
+          <i class="fa-solid fa-people-roof"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black text-slate-900 block" id="kpi-keluarga">438</span>
+          <span class="text-xs font-semibold text-slate-500 uppercase">Kepala Keluarga</span>
+        </div>
+      </div>
+      <div class="bg-white p-5 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl shrink-0">
+          <i class="fa-solid fa-map-location-dot"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black text-slate-900 block" id="kpi-luas">7.40</span>
+          <span class="text-xs font-semibold text-slate-500 uppercase">Luas Wilayah (km²)</span>
+        </div>
+      </div>
+      <div class="bg-white p-5 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl shrink-0">
+          <i class="fa-solid fa-shop"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black text-slate-900 block" id="kpi-ekonomi">27</span>
+          <span class="text-xs font-semibold text-slate-500 uppercase">Sarana Niaga</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SAMBUTAN LURAH ================= -->
+  <section id="sambutan" class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <div class="bg-gradient-to-r from-emerald-50 via-teal-50 to-white rounded-3xl p-6 sm:p-10 border border-emerald-100 shadow-sm grid md:grid-cols-12 gap-8 items-center">
+      
+      <div class="md:col-span-4 flex flex-col items-center text-center">
+        <div class="w-44 h-56 rounded-2xl overflow-hidden shadow-md border-4 border-white bg-slate-200">
+          <img id="foto-lurah" src="LurahYamin.jpeg" alt="Foto Lurah Yamin, S.IP" class="w-full h-full object-cover">
+        </div>
+        <h3 id="nama-lurah" class="font-extrabold text-slate-900 text-base mt-3">Yamin, S.IP</h3>
+        <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Lurah Petoaha</p>
+        <p id="nip-lurah" class="text-[11px] text-slate-500">NIP. 198001032008011008</p>
+      </div>
+
+      <div class="md:col-span-8 space-y-4">
+        <span class="px-3 py-1 text-xs font-bold bg-emerald-600 text-white rounded-full">Sambutan Pimpinan Wilayah</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Mewujudkan Kelurahan Petoaha yang Bersih, Ramah, & Berbasis Data</h2>
+        <p id="teks-sambutan" class="text-slate-600 leading-relaxed text-sm sm:text-base italic">
+          <!-- Diisi via app.js -->
+        </p>
+        <div class="pt-2 border-t border-slate-200 flex flex-wrap gap-6 text-xs text-slate-500">
+          <div><i class="fa-solid fa-calendar-check text-emerald-600 mr-1.5"></i>Periode: <span class="font-bold text-slate-700" id="periode-lurah">2025 - Sekarang</span></div>
+          <div><i class="fa-solid fa-building-flag text-emerald-600 mr-1.5"></i>Status: <span class="font-bold text-slate-700">Ibu Kota Kecamatan</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROFIL & SEJARAH ================= -->
+  <section id="profil" class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-8 items-start">
+      
+      <div class="lg:col-span-7 space-y-5">
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Identitas Wilayah</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Sejarah</h2>
+        <p id="deskripsi-sejarah" class="text-slate-600 leading-relaxed text-sm sm:text-base">
+          <!-- Diisi via app.js -->
+        </p>
+        <div class="bg-white p-5 rounded-2xl border-l-4 border-emerald-600 shadow-sm border border-slate-200">
+          <h4 class="font-bold text-emerald-950 text-sm flex items-center gap-2">
+            <i class="fa-solid fa-bullseye text-emerald-600"></i> Visi Kelurahan Petoaha:
+          </h4>
+          <p id="visi-text" class="text-slate-700 text-sm italic mt-2 font-medium"></p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+        <h3 class="font-bold text-slate-900 border-b pb-3 text-base flex items-center gap-2">
+          <i class="fa-solid fa-compass text-emerald-600"></i> Batas Administrasi Wilayah
+        </h3>
+        <div class="space-y-3 text-sm">
+          <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl">
+            <span class="text-slate-500 text-xs">Sebelah Utara</span>
+            <span class="font-bold text-slate-800" id="batas-utara">-</span>
+          </div>
+          <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl">
+            <span class="text-slate-500 text-xs">Sebelah Selatan</span>
+            <span class="font-bold text-slate-800" id="batas-selatan">-</span>
+          </div>
+          <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl">
+            <span class="text-slate-500 text-xs">Sebelah Barat</span>
+            <span class="font-bold text-slate-800" id="batas-barat">-</span>
+          </div>
+          <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl">
+            <span class="text-slate-500 text-xs">Sebelah Timur</span>
+            <span class="font-bold text-slate-800" id="batas-timur">-</span>
+          </div>
+        </div>
+        <div class="p-3 bg-emerald-50 rounded-xl text-xs text-emerald-800 leading-relaxed">
+          <i class="fa-solid fa-circle-info mr-1"></i> Dibentuk secara resmi berdasarkan <strong>Perda Kota Kendari No. 1 Tahun 2021</strong>. Terdiri dari <strong>5 RW dan 11 RT</strong>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= DASHBOARD STATISTIK SEKTORAL ================= -->
+  <section id="statistik" class="bg-slate-100 py-16 px-4 sm:px-6 lg:px-8 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto space-y-10">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="text-xs font-bold text-emerald-700 uppercase tracking-widest">Dashboard Satu Data Desa Cantik</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-900">Visualisasi Statistik Kelurahan 2026</h2>
+        <p class="text-slate-600 text-sm">Dihimpun dari pendataan pembinaan statistik sektoral BPS Kota Kendari dan instrumen DESCAN25.</p>
+      </div>
+
+      <!-- Charts Grid -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Chart 1: Gender -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1 text-center">Komposisi Penduduk (Gender)</h3>
+            <p class="text-xs text-slate-400 text-center mb-4">Total: 2.069 Jiwa | Sex Ratio: 97</p>
+          </div>
+          <div class="relative h-56">
+            <canvas id="chartGender"></canvas>
+          </div>
+          <div class="mt-4 pt-3 border-t text-[11px] text-slate-500 flex justify-between">
+            <span>Laki-laki: <strong>1020</strong></span>
+            <span>Perempuan: <strong>1049</strong></span>
+          </div>
+        </div>
+
+        <!-- Chart 2: Pertumbuhan KK -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1 text-center">Perkembangan Jumlah Keluarga</h3>
+            <p class="text-xs text-slate-400 text-center mb-4"> </p>
+          </div>
+          <div class="relative h-56">
+            <canvas id="chartKeluarga"></canvas>
+          </div>
+          <div class="mt-4 pt-3 border-t text-[11px] text-slate-500 text-center">
+            Tahun 2026 tercatat <strong>2049 Jiwa</strong>
+          </div>
+        </div>
+
+        <!-- Chart 3: Industri Mikro -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1 text-center">2 Unit Industri Kecil/Mikro</h3>
+            <p class="text-xs text-slate-400 text-center mb-4">Sebaran usaha non-formal masyarakat</p>
+          </div>
+          <div class="relative h-56">
+            <canvas id="chartIndustri"></canvas>
+          </div>
+          <div class="mt-4 pt-3 border-t text-[11px] text-slate-500 text-center">
+            Paling dominan: Industri Makanan 
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Fasilitas Pendidikan, Kesehatan, Keamanan -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Fasilitas Pendidikan -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+          <div class="flex items-center gap-3 text-emerald-800">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm">Fasilitas Pendidikan</h4>
+              <p class="text-xs text-slate-400">TK dan SD</p>
+            </div>
+          </div>
+          <ul id="list-sekolah" class="divide-y text-xs text-slate-600">
+            <!-- Diisi lewat app.js -->
+          </ul>
+        </div>
+
+        <!-- Sarana Niaga & Ekonomi -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+          <div class="flex items-center gap-3 text-amber-700">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm">Sarana Perdagangan</h4>
+              <p class="text-xs text-slate-400">Total 27 Titik Perdagangan</p>
+            </div>
+          </div>
+          <div class="space-y-2.5 text-xs text-slate-600">
+            <div class="flex justify-between py-1.5 border-b">
+              <span>Toko / Kios Kelontong</span><span class="font-bold text-slate-800">16 Unit</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b">
+              <span>Warung / Kedai Makan</span><span class="font-bold text-slate-800">11 Unit</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b">
+              <span>Minimarket Modern</span><span class="font-bold text-slate-800">0 Unit</span>
+            </div>
+            <div class="flex justify-between py-1.5">
+              <span>Penginapan</span><span class="font-bold text-emerald-700">1 Unit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mitigasi & Trantibum -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+          <div class="flex items-center gap-3 text-cyan-800">
+            <div class="w-10 h-10 rounded-xl bg-cyan-100 flex items-center justify-center">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm">Bencana & Ketertiban</h4>
+              <p class="text-xs text-slate-400">Indikator Bab 10 & Bab 12</p>
+            </div>
+          </div>
+          <div class="space-y-2.5 text-xs text-slate-600">
+            <div class="flex justify-between py-1.5 border-b">
+              <span>Rambu Jalur Evakuasi</span><span class="font-bold text-emerald-700">0% Wilayah</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b">
+              <span>Titik Rawan Banjir (1 RT)</span><span class="font-bold text-amber-600">12.5%</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b">
+              <span>Penyelesaian Oleh Aparat</span><span class="font-bold text-slate-800">37.5%</span>
+            </div>
+            <div class="flex justify-between py-1.5">
+              <span>Kejadian Luar Biasa (KLB)</span><span class="font-bold text-emerald-700">0 Kasus</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GALERI INFOGRAFIS ASLI (DAPAT DIPERBESAR) ================= -->
+  <section id="infografis" class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+      <div>
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Media Visual Data</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Galeri Infografis Resmi Kelurahan Petoaha</h2>
+        <p class="text-slate-500 text-sm mt-1">Infografis tematik berdasarkan publikasi kompilasi statistik sektoral.</p>
+      </div>
+      <div class="mt-4 md:mt-0 text-xs text-slate-500 bg-slate-100 px-3 py-2 rounded-lg border border-slate-200">
+        <i class="fa-solid fa-magnifying-glass-plus text-emerald-600 mr-1"></i> Klik gambar untuk melihat resolusi penuh
+      </div>
+    </div>
+
+    <!-- Container Grid Infografis -->
+    <div id="container-infografis" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Diisi otomatis secara dinamis oleh app.js -->
+    </div>
+  </section>
+
+  <!-- ================= STRUKTUR PEMERINTAHAN ================= -->
+  <section id="struktur" class="bg-gradient-to-br from-emerald-900 to-teal-950 text-white py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto space-y-10">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-bold text-emerald-300 uppercase tracking-widest">Aparatur Pemerintahan</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">Struktur Kelurahan Petoaha</h2>
+        <p class="text-emerald-200 text-sm mt-2">Daftar pejabat dan struktur pelayanan administrasi masyarakat.</p>
+      </div>
+
+      <div id="container-struktur" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Diisi otomatis lewat app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MODAL LIGHTBOX INFOGRAFIS ================= -->
+  <div id="imageModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl">
+      <div class="flex justify-between items-center px-5 py-3 border-b bg-slate-50">
+        <h4 id="modalTitle" class="font-bold text-slate-800 text-sm sm:text-base">Detail Infografis</h4>
+        <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-700 flex items-center justify-center text-sm transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="p-2 sm:p-4 max-h-[80vh] overflow-y-auto flex justify-center bg-slate-100">
+        <img id="modalImg" src="" alt="Infografis Preview" class="max-h-[75vh] w-auto object-contain rounded-lg shadow">
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-8 pb-8 border-b border-slate-800">
+      <div class="md:col-span-6 space-y-3">
+        <div class="flex items-center gap-3">
+          <img src="logo-kendari.png" alt="Logo Kota Kendari" class="h-10 w-auto">
+          <span class="font-extrabold text-white text-base">Kelurahan Nambo - Kota Kendari</span>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed max-w-md">
+          Portal profil desa cinta statistik sebagai sarana diseminasi data kependudukan dan ekonomi kerakyatan terpadu.
+        </p>
+      </div>
+      <div class="md:col-span-6 md:text-right space-y-2 text-xs">
+        <span class="text-slate-200 font-bold block text-sm">Alamat Kantor Kelurahan</span>
+        <p>Jl. Abeli, Kelurahan Petoaha, Kecamatan Nambo</p>
+        <p>Kota Kendari, Sulawesi Tenggara 93373</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-2">
+      <p>&copy; 2026 Kelurahan Petoaha. Dikembangkan untuk Program Desa Cantik 2026.</p>
+      <p>Didukung oleh BPS Kota Kendari & Pemerintah Kota Kendari</p>
+    </div>
+  </footer>
+
+  <!-- Script Logika -->
+  <script src="app.js"></script>
+</body>
+</html>
